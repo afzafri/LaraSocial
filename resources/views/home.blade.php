@@ -14,9 +14,8 @@
                         </div>
                     @endif
 
-                    You are logged in!
-                    <br>
-                    <p>My name: {{Auth::user()->name}}</p>
+                    <p>You are logged in with {{ (Auth::user()->provider != "") ? Auth::user()->provider : 'Web' }}!</p>
+                    <p>My name: {{Auth::user()->name}} {{ (Auth::user()->nickname != "") ? '('.Auth::user()->nickname.')' : '' }}</p>
                     <p>My Email: {{Auth::user()->email}}</p>
                     <img alt="{{Auth::user()->name}}" src="{{Auth::user()->image}}"/>
                 </div>
