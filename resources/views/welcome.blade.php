@@ -4,22 +4,46 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>LaraSocial</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="{{ asset('css/bootstrap-social.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/fontawesome/css/all.css') }}" rel="stylesheet">
 
         <!-- Styles -->
         <style>
             html, body {
                 background-color: #fff;
-                color: #636b6f;
+                color: #fff;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+
+                background: linear-gradient(270deg, #008ff0, #25bbd4, #b964ff);
+                background-size: 600% 600%;
+
+                -webkit-animation: AnimationName 25s ease infinite;
+                -moz-animation: AnimationName 25s ease infinite;
+                animation: AnimationName 25s ease infinite;
             }
 
+            @-webkit-keyframes AnimationName {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+            @-moz-keyframes AnimationName {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+            @keyframes AnimationName {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
             .full-height {
                 height: 100vh;
             }
@@ -49,7 +73,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #fff;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -81,18 +105,13 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    LaraSocial
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                  <span class="fab fa-facebook fa-2x"></span>
+                  <span class="fab fa-twitter fa-2x"></span>
+                  <span class="fab fa-github fa-2x"></span>
                 </div>
             </div>
         </div>

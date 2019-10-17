@@ -69,6 +69,28 @@
                             </div>
                         </div>
                     </form>
+
+                    <div class="row">
+                        <div class="col"><hr></div>
+                        <div class="col-auto">OR</div>
+                        <div class="col"><hr></div>
+                    </div>
+
+                    <form>
+                      <div class="form-group row">
+                          <div class="mx-auto">
+                            <a href="/login/facebook" class="btn btn-social btn-facebook">
+                              <span class="fab fa-facebook"></span> Sign in with Facebook
+                            </a>
+                            <a href="/login/twitter" class="btn btn-social btn-twitter">
+                              <span class="fab fa-twitter"></span> Sign in with Twitter
+                            </a>
+                            <a href="/login/github" class="btn btn-social btn-github">
+                              <span class="fab fa-github"></span> Sign in with GitHub
+                            </a>
+                          </div>
+                      </div>
+                    </form>
                 </div>
             </div>
         </div>
