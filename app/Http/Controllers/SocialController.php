@@ -30,9 +30,9 @@ class SocialController extends Controller
                     'image'         => $userSocial->getAvatar(),
                     'provider_id'   => $userSocial->getId(),
                     'provider'      => $provider,
-                    'token'         => $userSocial->token,
-                    'refresh_token' => $userSocial->refreshToken,
-                    'expires_in'    => $userSocial->expiresIn,
+                    'provider_token'         => $userSocial->token,
+                    'provider_refresh_token' => $userSocial->refreshToken,
+                    'provider_expires_in'    => $userSocial->expiresIn,
                 ]);
             return redirect()->route('home');
         }
