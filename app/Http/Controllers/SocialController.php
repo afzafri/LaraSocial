@@ -23,7 +23,7 @@ class SocialController extends Controller
 
         if($users) {
             Auth::login($users);
-            return redirect('/');
+            return redirect()->route('home');
         } else {
             $user = User::create([
                     'name'          => $userSocial->getName(),
