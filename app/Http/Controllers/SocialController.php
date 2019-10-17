@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Socialite;
+use Auth;
 
 use App\User;
 
@@ -34,6 +35,7 @@ class SocialController extends Controller
                     'provider_refresh_token' => $userSocial->refreshToken,
                     'provider_expires_in'    => $userSocial->expiresIn,
                 ]);
+            Auth::login($user);
             return redirect()->route('home');
         }
     }
