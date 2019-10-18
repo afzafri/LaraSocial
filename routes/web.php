@@ -19,8 +19,19 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-// ---- LARAVEL SOCIALITE LOGIN
+// ----- LARAVEL SOCIALITE LOGIN -----
 
 Route::get('login/{provider}', 'SocialController@redirect');
 
 Route::get('login/{provider}/callback','SocialController@Callback');
+
+
+// ----- TOS AND POLICY -----
+
+Route::get('tos', function() {
+  return view('tos');
+});
+
+Route::get('policy', function() {
+  return view('policy');
+});
