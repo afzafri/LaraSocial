@@ -68,7 +68,7 @@
 
                     <div class="row">
                         <div class="col"><hr></div>
-                        <div class="col-auto">OR</div>
+                        <div class="col-auto">OR Sign in with</div>
                         <div class="col"><hr></div>
                     </div>
 
@@ -76,13 +76,16 @@
                       <div class="form-group row">
                           <div class="mx-auto">
                             <a href="/login/facebook" class="btn btn-social btn-facebook">
-                              <span class="fab fa-facebook"></span> Sign in with Facebook
+                              <span class="fab fa-facebook"></span> Facebook
                             </a>
                             <a href="/login/twitter" class="btn btn-social btn-twitter">
-                              <span class="fab fa-twitter"></span> Sign in with Twitter
+                              <span class="fab fa-twitter"></span> Twitter
+                            </a>
+                            <a href="/login/google" class="btn btn-social btn-google">
+                              <span class="fab fa-google"></span> Google
                             </a>
                             <a href="/login/github" class="btn btn-social btn-github">
-                              <span class="fab fa-github"></span> Sign in with GitHub
+                              <span class="fab fa-github"></span> GitHub
                             </a>
                           </div>
                       </div>
