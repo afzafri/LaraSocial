@@ -32,9 +32,9 @@ class SocialController extends Controller
                     'image'         => $userSocial->getAvatar(),
                     'provider_id'   => $userSocial->getId(),
                     'provider'      => $provider,
-                    'provider_token'         => $userSocial->token,
-                    'provider_refresh_token' => $userSocial->refreshToken,
-                    'provider_expires_in'    => $userSocial->expiresIn,
+                    'provider_token'         => (property_exists($userSocial, 'token')) ? $userSocial->token : '',
+                    'provider_refresh_token' => (property_exists($userSocial, 'refreshToken')) ? $userSocial->refreshToken : '',
+                    'provider_expires_in'    => (property_exists($userSocial, 'expiresIn')) ? $userSocial->expiresIn : '',
                 ]);
             Auth::login($user);
             return redirect()->route('home');
