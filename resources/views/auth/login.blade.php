@@ -84,6 +84,9 @@
                             <a href="/login/google" class="btn btn-social btn-google">
                               <span class="fab fa-google"></span> Google
                             </a>
+                            <a href="/login/linkedin" class="btn btn-social btn-linkedin">
+                              <span class="fab fa-linkedin"></span> LinkedIn
+                            </a>
                             <a href="/login/github" class="btn btn-social btn-github">
                               <span class="fab fa-github"></span> GitHub
                             </a>

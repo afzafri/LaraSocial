@@ -112,6 +112,7 @@
                   <span class="fab fa-facebook fa-2x"></span>
                   <span class="fab fa-twitter fa-2x"></span>
                   <span class="fab fa-google fa-2x"></span>
+                  <span class="fab fa-linkedin fa-2x"></span>
                   <span class="fab fa-github fa-2x"></span>
                 </div>
             </div>
